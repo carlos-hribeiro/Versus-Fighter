@@ -100,10 +100,13 @@ namespace PorradaEngine.Anim
         public void Draw(SpriteBatch spriteBatch)
         {
             FrameAnimacao frame = frames.ElementAt(frameAtual);
-            
+
             frame.Draw(spriteBatch);
 
-            frame.DrawCollisionBoxes(spriteBatch);
+            if (player.ShowCollisionBox)
+            {
+                frame.DrawCollisionBoxes(spriteBatch);
+            }
 
             
         }

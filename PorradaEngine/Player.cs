@@ -25,6 +25,11 @@ namespace PorradaEngine
 
         int velocidadeAndarFrente;
 
+        bool slowAnimation = false;
+
+        bool f1Pressed = false;
+        bool f2Pressed = false;
+
         public ControllerConfiguration Controller
         {
             get;
@@ -133,6 +138,26 @@ namespace PorradaEngine
                 }
             }
 
+            if (state.IsKeyDown(Keys.F1))
+            {
+                f1Pressed = true;
+            }
+            else if (f1Pressed)
+            {
+                f1Pressed = false;
+                slowAnimation = !slowAnimation;
+            }
+
+            if (state.IsKeyDown(Keys.F2))
+            {
+                f2Pressed = true;
+            }
+            else if (f2Pressed)
+            {
+                f2Pressed = false;
+                ShowCollisionBox = !ShowCollisionBox;
+            }
+
 
 
             if (animacaoAtual.Terminou)
@@ -141,6 +166,8 @@ namespace PorradaEngine
                 animacaoAtual = parado;
             }
 
+
+            animacaoAtual.Slow = slowAnimation;
             animacaoAtual.Update();
 
             
@@ -165,6 +192,12 @@ namespace PorradaEngine
         public void Draw(SpriteBatch spriteBatch)
         {
             animacaoAtual.Draw(spriteBatch);
+        }
+
+        public bool ShowCollisionBox
+        {
+            get;
+            set;
         }
     }
 }

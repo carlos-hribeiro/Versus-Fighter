@@ -11,7 +11,8 @@
           <posicaoImagem>270 122 67 98</posicaoImagem>
           <maxFrame>5</maxFrame>
           <hittableBoxes>
-            0 0 67 98
+            26 0 24 21
+            0 21 63 77
           </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
@@ -19,7 +20,8 @@
           <posicaoImagem>350 122 67 98</posicaoImagem>
           <maxFrame>5</maxFrame>
           <hittableBoxes>
-            0 0 67 98
+            26 0 24 21
+            0 21 63 77
           </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
@@ -27,7 +29,8 @@
           <posicaoImagem>427 122 67 98</posicaoImagem>
           <maxFrame>5</maxFrame>
           <hittableBoxes>
-            0 0 67 98
+            26 0 24 21
+            0 21 63 77
           </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
@@ -35,7 +38,8 @@
           <posicaoImagem>505 122 67 98</posicaoImagem>
           <maxFrame>5</maxFrame>
           <hittableBoxes>
-            0 0 67 98
+            26 0 24 21
+            0 21 63 77
           </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
@@ -43,7 +47,8 @@
           <posicaoImagem>427 122 67 98</posicaoImagem>
           <maxFrame>5</maxFrame>
           <hittableBoxes>
-            0 0 67 98
+            26 0 24 21
+            0 21 63 77
           </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
@@ -51,7 +56,8 @@
           <posicaoImagem>350 122 67 98</posicaoImagem>
           <maxFrame>5</maxFrame>
           <hittableBoxes>
-            0 0 67 98
+            26 0 24 21
+            0 21 63 77
           </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
@@ -63,37 +69,55 @@
         <Item>
           <posicaoImagem>63 235 70 98</posicaoImagem>
           <maxFrame>8</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>144 235 70 98</posicaoImagem>
           <maxFrame>8</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>228 235 60 98</posicaoImagem>
           <maxFrame>8</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>306 235 57 98</posicaoImagem>
           <maxFrame>8</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>378 235 57 98</posicaoImagem>
           <maxFrame>8</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>455 235 63 98</posicaoImagem>
           <maxFrame>8</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
       </frames>
@@ -104,37 +128,55 @@
         <Item>
           <posicaoImagem>66 344 61 98</posicaoImagem>
           <maxFrame>9</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>143 344 55 98</posicaoImagem>
           <maxFrame>9</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>221 344 55 98</posicaoImagem>
           <maxFrame>9</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>291 344 62 98</posicaoImagem>
           <maxFrame>9</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>368 344 63 98</posicaoImagem>
           <maxFrame>9</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>455 344 63 98</posicaoImagem>
           <maxFrame>9</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
       </frames>
@@ -145,25 +187,40 @@
         <Item>
           <posicaoImagem>26 822 67 98</posicaoImagem>
           <maxFrame>5</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>106 822 67 98</posicaoImagem>
           <maxFrame>5</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>190 822 109 98</posicaoImagem>
           <maxFrame>9</maxFrame>
-          <hittableBoxes></hittableBoxes>
-          <attackBoxes></attackBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+            60 12 50 14
+          </hittableBoxes>
+          <attackBoxes>
+            60 12 50 14
+          </attackBoxes>
         </Item>
         <Item>
           <posicaoImagem>106 822 67 98</posicaoImagem>
           <maxFrame>5</maxFrame>
-          <hittableBoxes></hittableBoxes>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
           <attackBoxes></attackBoxes>
         </Item>
       </frames>
