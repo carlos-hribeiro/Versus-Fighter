@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versus-Fighter", "Versus-Fighter\Versus-Fighter\Versus-Fighter.csproj", "{3A5632ED-E6D8-431D-8CEF-E08F870A0FA6}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Versus-FighterContent", "Versus-Fighter\Versus-FighterContent\Versus-FighterContent.contentproj", "{4EFF5259-8C76-4748-9675-6FB8F4DD94DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PorradaEngine", "PorradaEngine\PorradaEngine.csproj", "{4B947F33-EAE9-4BAE-83A6-4AB7DE3EEDE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A5632ED-E6D8-431D-8CEF-E08F870A0FA6}.Debug|x86.ActiveCfg = Debug|x86
+		{3A5632ED-E6D8-431D-8CEF-E08F870A0FA6}.Debug|x86.Build.0 = Debug|x86
+		{3A5632ED-E6D8-431D-8CEF-E08F870A0FA6}.Release|x86.ActiveCfg = Release|x86
+		{3A5632ED-E6D8-431D-8CEF-E08F870A0FA6}.Release|x86.Build.0 = Release|x86
+		{4EFF5259-8C76-4748-9675-6FB8F4DD94DF}.Debug|x86.ActiveCfg = Debug|x86
+		{4EFF5259-8C76-4748-9675-6FB8F4DD94DF}.Release|x86.ActiveCfg = Release|x86
+		{4B947F33-EAE9-4BAE-83A6-4AB7DE3EEDE1}.Debug|x86.ActiveCfg = Debug|x86
+		{4B947F33-EAE9-4BAE-83A6-4AB7DE3EEDE1}.Debug|x86.Build.0 = Debug|x86
+		{4B947F33-EAE9-4BAE-83A6-4AB7DE3EEDE1}.Release|x86.ActiveCfg = Release|x86
+		{4B947F33-EAE9-4BAE-83A6-4AB7DE3EEDE1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
