@@ -15,7 +15,7 @@ using PorradaEngine.Xml;
 namespace Versus_Fighter
 {
     /// <summary>
-    /// This is the main type for your game
+    /// This is the main type for your game - ai caramba!!!
     /// </summary>
     public class VersusFighter : Microsoft.Xna.Framework.Game
     {
