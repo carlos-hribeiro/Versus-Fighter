@@ -8,6 +8,9 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace PorradaEngine.Collision
 {
+    /// <summary>
+    /// Representa os boxes de colisao do tipo Ataque
+    /// </summary>
     public class AttackBox :CollisionBox
     {
 
