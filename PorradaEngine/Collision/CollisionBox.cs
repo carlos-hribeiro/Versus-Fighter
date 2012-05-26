@@ -9,6 +9,9 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace PorradaEngine.Collision
 {
+    /// <summary>
+    /// Representa os boxes de colisao
+    /// </summary>
     public abstract class CollisionBox
     {
         protected Rectangle rectangle;
@@ -21,8 +24,10 @@ namespace PorradaEngine.Collision
         protected abstract Color getColorRectangle();
         protected abstract Color getColorBorderRectangle();
 
+        //Cria o box com base na posicao do personagem
         public Rectangle GlobalRectangle(int posPersonagemX, int posPersonagemY, bool faceLeft)
         {
+            //inverte os boxes dependendo de qual lado o personagem se encontra.
             int x;
             if (faceLeft)
             {
@@ -37,9 +42,12 @@ namespace PorradaEngine.Collision
             return r;
         }
 
+        /// <summary>
+        /// Desenha os boxes de colisao
+        /// </summary>
         public void Draw(SpriteBatch spriteBatch, int x, int y, bool faceLeft)
         {
-            Texture2D rect = ResourceManager.Instance.GetTexture("rectangle");
+            Texture2D rect = ResourceManager.Instance.GetTexture(ResourceManager.rectangleColision);
 
             Rectangle r = GlobalRectangle(x, y, faceLeft);
 

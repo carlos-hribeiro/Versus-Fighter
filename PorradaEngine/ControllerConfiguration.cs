@@ -7,27 +7,18 @@ using Microsoft.Xna.Framework.Input;
 
 namespace PorradaEngine
 {
+    /// <summary>
+    /// Engloba as teclas existentes
+    /// </summary>
     public class ControllerConfiguration
     {
 
-        public Keys Left
-        {
-            get;
-            set;
-        }
+        //movimento
+        public Keys Left{ get; set; }
+        public Keys Right{ get; set; }
 
-        public Keys Right
-        { 
-            get; 
-            set; 
-        }
-
-        public Keys HardPunch
-        {
-            get;
-            set;
-        }
-
+        //golpes
+        public Keys HardPunch { get; set;}
 
     }
 }

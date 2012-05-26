@@ -13,6 +13,10 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace PorradaEngine.Anim
 {
+
+    /// <summary>
+    /// Controla a animacao do personagem
+    /// </summary>
     public class Animacao
     {
         List<FrameAnimacao> frames = new List<FrameAnimacao>();
@@ -22,10 +26,9 @@ namespace PorradaEngine.Anim
         bool inLoop = false;
         Player player;
 
-        
-
         public Animacao(AnimacaoXml animacaoXml, Player player)
         {
+            //cria uma lista de frames de determinada animacao com base no xml do personagem
             foreach (FrameAnimacaoXml frame in animacaoXml.frames)
             {
                 AddFrame(new FrameAnimacao(frame));
@@ -34,8 +37,7 @@ namespace PorradaEngine.Anim
 
         }
 
-        public bool Terminou
-        {
+        public bool Terminou {
             get { return terminou; }
             set { terminou = value; }
         }
@@ -52,8 +54,7 @@ namespace PorradaEngine.Anim
             frames.Add(frame);
         }
 
-        public bool Slow
-        {
+        public bool Slow {
             get;
             set;
         }
@@ -73,30 +74,39 @@ namespace PorradaEngine.Anim
             get { return player.FaceLeft; }
         }
 
+        /// <summary>
+        /// Controla a atualizacao de cada frame da animacao
+        /// </summary>
         public void Update()
         {
             f++;
+            //passa para o proximo frame somente se ja acabou seu tempo de exibicao na tela
             if (f >= frames.ElementAt(frameAtual).MaxFrame)
             {
                 
-                    f = 0;
-                    frameAtual++;
-                    if (frameAtual >= frames.Count)
-                    {
-                        frameAtual = 0;
+                f = 0;
+                frameAtual++; //passa para o proximo frame
 
-                        if (!inLoop)
-                        {
-                            f = 0;
-                            terminou = true;
-                        }
+                //termina a animacao
+                if (frameAtual >= frames.Count)
+                {
+                    frameAtual = 0;
+
+                    if (!inLoop)
+                    {
+                        f = 0;
+                        terminou = true;
                     }
+                }
                 
             }
 
             frames.ElementAt(frameAtual).Slow = Slow;
         }
 
+        /// <summary>
+        /// Desenha o frame atual da animacao
+        /// </summary>
         public void Draw(SpriteBatch spriteBatch)
         {
             FrameAnimacao frame = frames.ElementAt(frameAtual);
@@ -107,8 +117,6 @@ namespace PorradaEngine.Anim
             {
                 frame.DrawCollisionBoxes(spriteBatch);
             }
-
-            
         }
 
     }
