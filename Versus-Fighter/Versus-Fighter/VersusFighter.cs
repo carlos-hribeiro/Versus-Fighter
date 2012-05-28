@@ -15,7 +15,7 @@ using PorradaEngine.Xml;
 namespace Versus_Fighter
 {
     /// <summary>
-    /// This is the main type for your game - ai caramba!!!
+    /// Classe principal Versus_Fighter
     /// </summary>
     public class VersusFighter : Microsoft.Xna.Framework.Game
     {
@@ -23,7 +23,6 @@ namespace Versus_Fighter
         SpriteBatch spriteBatch;
         Player player1;
         Player player2;
-       // Texture2D ryu;
 
         public VersusFighter()
         {
@@ -33,42 +32,42 @@ namespace Versus_Fighter
 
         /// <summary>
         /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
         /// </summary>
         protected override void Initialize()
         {
-
             
+            //Setando o nome da pasta das texturas
+            ResourceManager.Instance.PastaTextura = ResourceManager.pastaSprites;
 
-            ResourceManager.Instance.PastaTextura = "Sprites";
-            ResourceManager.Instance.AddTextureToLoad("Ryu1");
-            ResourceManager.Instance.AddTextureToLoad("rectangle");
+            //Setando o nome das texturas a serem carregadas
+            ResourceManager.Instance.AddTextureToLoad(ResourceManager.spritePersonagemRyu);
+            //nome da textura de colisao, esta textura sera criada internamente
+            ResourceManager.Instance.AddTextureToLoad(ResourceManager.rectangleColision); 
 
 
             base.Initialize();
         }
 
         /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
+        /// LoadContent will be called once per game and is the place to load all of your content.
         /// </summary>
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            spriteBatch = new SpriteBatch(GraphicsDevice);            
             
-            
+            //carregando as texturas
             ResourceManager.Instance.LoadTextures(Content, GraphicsDevice);
 
+            //carregando a extrutura xml do personagem para um objeto com a mesma estrutura
             PlayerXml xml = Content.Load<PlayerXml>(@"Personagens/Ryu");
 
+            //criando player
             player1 = new Player(xml);
             player1.PosX = 50;
             player1.PosY = 100;
 
+            //config. teclas de acao
             ControllerConfiguration controller1 = new ControllerConfiguration();
             controller1.HardPunch = Keys.Q;
             controller1.Left = Keys.J;
@@ -90,8 +89,7 @@ namespace Versus_Fighter
 
 
         /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// all content.
+        /// UnloadContent will be called once per game and is the place to unload all content.
         /// </summary>
         protected override void UnloadContent()
         {
