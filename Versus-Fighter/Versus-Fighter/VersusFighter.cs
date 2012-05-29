@@ -23,6 +23,7 @@ namespace Versus_Fighter
         SpriteBatch spriteBatch;
         Player player1;
         Player player2;
+        Player playerAkuma;
 
         public VersusFighter()
         {
@@ -35,12 +36,18 @@ namespace Versus_Fighter
         /// </summary>
         protected override void Initialize()
         {
+
+            //Setando o tamanho da tela
+            graphics.PreferredBackBufferWidth = 1024;
+            graphics.PreferredBackBufferHeight = 768;
+            graphics.ApplyChanges();
             
             //Setando o nome da pasta das texturas
             ResourceManager.Instance.PastaTextura = ResourceManager.pastaSprites;
 
             //Setando o nome das texturas a serem carregadas
             ResourceManager.Instance.AddTextureToLoad(ResourceManager.spritePersonagemRyu);
+            ResourceManager.Instance.AddTextureToLoad(ResourceManager.spritePersonagemAkuma);
             //nome da textura de colisao, esta textura sera criada internamente
             ResourceManager.Instance.AddTextureToLoad(ResourceManager.rectangleColision); 
 
@@ -60,12 +67,13 @@ namespace Versus_Fighter
             ResourceManager.Instance.LoadTextures(Content, GraphicsDevice);
 
             //carregando a extrutura xml do personagem para um objeto com a mesma estrutura
-            PlayerXml xml = Content.Load<PlayerXml>(@"Personagens/Ryu");
+            PlayerXml xml = Content.Load<PlayerXml>(@"Personagens/Ryu");            
 
+            //Ryu
             //criando player
             player1 = new Player(xml);
-            player1.PosX = 50;
-            player1.PosY = 100;
+            player1.PosX = (Window.ClientBounds.Width - 250) / 2;
+            player1.PosY = (Window.ClientBounds.Height - 100) / 2;
 
             //config. teclas de acao
             ControllerConfiguration controller1 = new ControllerConfiguration();
@@ -75,8 +83,8 @@ namespace Versus_Fighter
             player1.Controller = controller1;
 
             player2 = new Player(xml);
-            player2.PosX = 250;
-            player2.PosY = 100;
+            player2.PosX = (Window.ClientBounds.Width + 250) / 2;
+            player2.PosY = (Window.ClientBounds.Height - 100) / 2;
             player2.FaceLeft = false;
 
             ControllerConfiguration controller2 = new ControllerConfiguration();
@@ -84,6 +92,16 @@ namespace Versus_Fighter
             controller2.Left = Keys.Left;
             controller2.Right = Keys.Right;
             player2.Controller = controller2;
+
+            //Akuma
+            //criando player
+            PlayerXml xmlAkumaMove = Content.Load<PlayerXml>(@"Personagens/Akuma");
+            playerAkuma = new Player(xmlAkumaMove);
+            playerAkuma.PosX = (Window.ClientBounds.Width - 250) / 2;
+            playerAkuma.PosY = (Window.ClientBounds.Height - 100) / 2;
+            playerAkuma.FaceLeft = false;
+            playerAkuma.Controller = controller2;
+
 
         }
 
@@ -109,6 +127,7 @@ namespace Versus_Fighter
 
             player1.Update();
             player2.Update();
+            //playerAkuma.Update();
 
             base.Update(gameTime);
         }
@@ -124,6 +143,7 @@ namespace Versus_Fighter
             spriteBatch.Begin();
             player1.Draw(spriteBatch);
             player2.Draw(spriteBatch);
+            //playerAkuma.Draw(spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);

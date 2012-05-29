@@ -24,6 +24,7 @@ namespace PorradaEngine
 
         public const string rectangleColision = "rectangle";
         public const string spritePersonagemRyu = "Ryu1";
+        public const string spritePersonagemAkuma = "Akuma_move";
         public const string pastaSprites = "Sprites";
 
         string pastaTextura = "";

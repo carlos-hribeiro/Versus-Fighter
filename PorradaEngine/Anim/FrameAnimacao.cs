@@ -78,15 +78,18 @@ namespace PorradaEngine.Anim
             //TODO: mudar isto, vai desenhar sempre o ryu
             //desenha o personagem ryu
             Texture2D texture = ResourceManager.Instance.GetTexture(ResourceManager.spritePersonagemRyu);
+            //Texture2D textureAkuma = ResourceManager.Instance.GetTexture(ResourceManager.spritePersonagemAkuma);
 
             if (animacao.FaceLeft)
             {
                 spriteBatch.Draw(texture, new Vector2(animacao.PosX, animacao.PosY), posicaoImagem, Color.White);
+              //  spriteBatch.Draw(textureAkuma, new Vector2(animacao.PosX, animacao.PosY), posicaoImagem, Color.White);
             }
             else
             {
                 //inverte a posicao do frame para o lado oposto
                 spriteBatch.Draw(texture, new Vector2(animacao.PosX - posicaoImagem.Width, animacao.PosY), posicaoImagem, Color.White, 0, Vector2.Zero, 1, SpriteEffects.FlipHorizontally, 0);
+                //spriteBatch.Draw(textureAkuma, new Vector2(animacao.PosX - posicaoImagem.Width, animacao.PosY), posicaoImagem, Color.White, 0, Vector2.Zero, 1, SpriteEffects.FlipHorizontally, 0);
             }
         }
 
