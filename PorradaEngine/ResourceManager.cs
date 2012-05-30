@@ -23,8 +23,10 @@ namespace PorradaEngine
         Dictionary<string, Texture2D> textures = new Dictionary<string, Texture2D>();
 
         public const string rectangleColision = "rectangle";
+
         public const string spritePersonagemRyu = "Ryu1";
-        public const string spritePersonagemAkuma = "Akuma_move";
+        public const string spritePersonagemAkumaHD = "Akuma_moveHD";
+
         public const string pastaSprites = "Sprites";
 
         string pastaTextura = "";

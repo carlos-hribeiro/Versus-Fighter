@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <!-- TODO: replace this Asset with your own XML asset data. -->
+  <Asset Type="PorradaEngine.Xml.PlayerXml">
+
+    <velocidadeAndarFrente>2</velocidadeAndarFrente>
+    
+    <parado>
+      <frames>
+        <Item>
+          <spriteFile>Akuma_moveHD</spriteFile>
+          <posicaoImagem>1 40 256 542</posicaoImagem>
+          <maxFrame>5</maxFrame>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <Item>
+          <spriteFile>Akuma_moveHD</spriteFile>
+          <posicaoImagem>260 40 256 542</posicaoImagem>
+          <maxFrame>5</maxFrame>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <Item>
+          <spriteFile>Akuma_moveHD</spriteFile>
+          <posicaoImagem>520 40 256 542</posicaoImagem>
+          <maxFrame>5</maxFrame>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <Item>
+          <spriteFile>Akuma_moveHD</spriteFile>
+          <posicaoImagem>260 40 256 542</posicaoImagem>
+          <maxFrame>5</maxFrame>
+          <hittableBoxes>
+            26 0 24 21
+            0 21 63 77
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+      </frames>
+    </parado>
+
+    <andarFrente>
+      <frames>
+        <Item>
+          <spriteFile>Akuma_moveHD</spriteFile>
+          <posicaoImagem>0 0 0 0</posicaoImagem>
+          <maxFrame>0</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+      </frames>
+    </andarFrente>
+
+    <andarTraz>
+      <frames>
+        <Item>
+          <spriteFile>Akuma_moveHD</spriteFile>
+          <posicaoImagem>0 0 0 0</posicaoImagem>
+          <maxFrame>0</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+      </frames>
+    </andarTraz>
+
+    <socoForte>
+      <frames>
+        <Item>
+          <spriteFile>Akuma_moveHD</spriteFile>
+          <posicaoImagem>0 0 0 0</posicaoImagem>
+          <maxFrame>0</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+      </frames>
+    </socoForte>    
+
+  </Asset>
+</XnaContent>

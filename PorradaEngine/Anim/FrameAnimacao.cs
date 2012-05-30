@@ -21,6 +21,7 @@ namespace PorradaEngine.Anim
         int maxFrame;
         Animacao animacao;
         bool slow = false; //para o frame ficar mais tempo na tela
+        string spriteFile = null;
 
         List<HittableBox> hittableBoxes = new List<HittableBox>();
         List<AttackBox> attackBoxes = new List<AttackBox>();
@@ -54,17 +55,20 @@ namespace PorradaEngine.Anim
         {
             this.posicaoImagem = frameXml.posicaoImagem;
             this.maxFrame = frameXml.maxFrame;
+            this.spriteFile = frameXml.spriteFile;
 
             //pega os boxes de colisao do frame com base no xml
             foreach (Rectangle rectHittable in frameXml.hittableBoxes)
             {
-                hittableBoxes.Add(new HittableBox(rectHittable.X, rectHittable.Y, rectHittable.Width, rectHittable.Height));
+                hittableBoxes.Add(
+                    new HittableBox(rectHittable.X, rectHittable.Y, rectHittable.Width, rectHittable.Height));
             }
 
             //pega os boxes de ataque do frame com base no xml
             foreach (Rectangle rectAttack in frameXml.attackBoxes)
             {
-                attackBoxes.Add(new AttackBox(rectAttack.X, rectAttack.Y, rectAttack.Width, rectAttack.Height));
+                attackBoxes.Add(
+                    new AttackBox(rectAttack.X, rectAttack.Y, rectAttack.Width, rectAttack.Height));
             }
         }
 
@@ -74,23 +78,23 @@ namespace PorradaEngine.Anim
         /// </summary>
         public void Draw(SpriteBatch spriteBatch)
         {
-
-            //TODO: mudar isto, vai desenhar sempre o ryu
-            //desenha o personagem ryu
-            Texture2D texture = ResourceManager.Instance.GetTexture(ResourceManager.spritePersonagemRyu);
-            //Texture2D textureAkuma = ResourceManager.Instance.GetTexture(ResourceManager.spritePersonagemAkuma);
-
-            if (animacao.FaceLeft)
+            if (spriteFile != null)
             {
-                spriteBatch.Draw(texture, new Vector2(animacao.PosX, animacao.PosY), posicaoImagem, Color.White);
-              //  spriteBatch.Draw(textureAkuma, new Vector2(animacao.PosX, animacao.PosY), posicaoImagem, Color.White);
+                Texture2D texture = ResourceManager.Instance.GetTexture(spriteFile);
+
+                if (animacao.FaceLeft)
+                {
+                    spriteBatch.Draw(texture,
+                        new Vector2(animacao.PosX, animacao.PosY), posicaoImagem, Color.White);
+                }
+                else
+                {
+                    //inverte a posicao do frame para o lado oposto
+                    spriteBatch.Draw(texture,
+                        new Vector2(animacao.PosX - posicaoImagem.Width, animacao.PosY), posicaoImagem, Color.White, 0, Vector2.Zero, 1, SpriteEffects.FlipHorizontally, 0);
+                }
             }
-            else
-            {
-                //inverte a posicao do frame para o lado oposto
-                spriteBatch.Draw(texture, new Vector2(animacao.PosX - posicaoImagem.Width, animacao.PosY), posicaoImagem, Color.White, 0, Vector2.Zero, 1, SpriteEffects.FlipHorizontally, 0);
-                //spriteBatch.Draw(textureAkuma, new Vector2(animacao.PosX - posicaoImagem.Width, animacao.PosY), posicaoImagem, Color.White, 0, Vector2.Zero, 1, SpriteEffects.FlipHorizontally, 0);
-            }
+            
         }
 
         /// <summary>

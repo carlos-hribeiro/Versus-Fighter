@@ -69,65 +69,67 @@ namespace PorradaEngine
 
             //Verifica as teclas pressionadas e seta uma determinada acao.
             KeyboardState state = Keyboard.GetState();
-
-            //Golpes
-            //soco forte
-            if (state.IsKeyDown(Controller.HardPunch) && animacaoAtual == parado)
+            if (Controller != null)
             {
-                animacaoAtual = socoForte;
-            }
-
-            //Movimentacao
-            //Direita
-            if (state.IsKeyDown(Controller.Right))
-            {
-
-                if (FaceLeft)
+                //Golpes
+                //soco forte
+                if (state.IsKeyDown(Controller.HardPunch) && animacaoAtual == parado)
                 {
-                    iniciaAnimacaoAndar(andarFrente);
+                    animacaoAtual = socoForte;
+                }
+
+                //Movimentacao
+                //Direita
+                if (state.IsKeyDown(Controller.Right))
+                {
+
+                    if (FaceLeft)
+                    {
+                        iniciaAnimacaoAndar(andarFrente);
+                    }
+                    else
+                    {
+                        iniciaAnimacaoAndar(andarTraz);
+                    }
+
+                    PosX += velocidadeAndarFrente;
                 }
                 else
                 {
-                    iniciaAnimacaoAndar(andarTraz);
-                }
-                
-                PosX += velocidadeAndarFrente;
-            }
-            else
-            {
-                if (FaceLeft)
-                {
-                    paraAnimacaoAndar(andarFrente);
-                }
-                else
-                {
-                    paraAnimacaoAndar(andarTraz);
-                }
-            }
-
-            //Esquerda
-            if (state.IsKeyDown(Controller.Left))
-            {
-                if (FaceLeft)
-                {
-                    iniciaAnimacaoAndar(andarTraz);
-                }
-                else
-                {
-                    iniciaAnimacaoAndar(andarFrente);
+                    if (FaceLeft)
+                    {
+                        paraAnimacaoAndar(andarFrente);
+                    }
+                    else
+                    {
+                        paraAnimacaoAndar(andarTraz);
+                    }
                 }
 
-                PosX -= 2;
-            }
-            else
-            {
-                if (FaceLeft)
+                //Esquerda
+                if (state.IsKeyDown(Controller.Left))
                 {
-                    paraAnimacaoAndar(andarTraz);
+                    if (FaceLeft)
+                    {
+                        iniciaAnimacaoAndar(andarTraz);
+                    }
+                    else
+                    {
+                        iniciaAnimacaoAndar(andarFrente);
+                    }
+
+                    PosX -= 2;
                 }
                 else
                 {
-                    paraAnimacaoAndar(andarFrente);
+                    if (FaceLeft)
+                    {
+                        paraAnimacaoAndar(andarTraz);
+                    }
+                    else
+                    {
+                        paraAnimacaoAndar(andarFrente);
+                    }
                 }
             }
 

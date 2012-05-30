@@ -12,6 +12,9 @@ namespace PorradaEngine.Xml
     /// </summary>
     public class FrameAnimacaoXml
     {
+        //nome da imagem relacionada ao frame
+        public string spriteFile;
+
         //tamano e posicao da imagem
         public Rectangle posicaoImagem;
 
