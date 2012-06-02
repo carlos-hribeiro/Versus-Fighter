@@ -26,8 +26,14 @@ namespace PorradaEngine
 
         public const string spritePersonagemRyu = "Ryu1";
         public const string spritePersonagemAkumaHD = "Akuma_moveHD";
+        public const string spritePersonagemSFIIIAkumaMove = "SFIII_Akuma_Move";
 
         public const string pastaSprites = "Sprites";
+        public const string pastaPersonagens = "Personagens";
+
+        public const string personagemSFARyu = "Ryu";
+        public const string personagemHDAkuma = "AkumaHD";
+        public const string personagemSFIIIAkuma = "SFIIIAkuma";
 
         string pastaTextura = "";
 

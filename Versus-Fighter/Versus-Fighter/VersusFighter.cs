@@ -48,6 +48,7 @@ namespace Versus_Fighter
             //Setando o nome das texturas a serem carregadas
             ResourceManager.Instance.AddTextureToLoad(ResourceManager.spritePersonagemRyu);
             ResourceManager.Instance.AddTextureToLoad(ResourceManager.spritePersonagemAkumaHD);
+            ResourceManager.Instance.AddTextureToLoad(ResourceManager.spritePersonagemSFIIIAkumaMove);
             
             //nome da textura de colisao, esta textura sera criada internamente
             ResourceManager.Instance.AddTextureToLoad(ResourceManager.rectangleColision); 
@@ -67,13 +68,13 @@ namespace Versus_Fighter
             //carregando as texturas
             ResourceManager.Instance.LoadTextures(Content, GraphicsDevice);
 
-            //carregando a extrutura xml do personagem para um objeto com a mesma estrutura
-            PlayerXml xml = Content.Load<PlayerXml>(@"Personagens/Ryu");
-
+            //-----------------------------------------
             //Ryu
+            //carregando a extrutura xml do personagem para um objeto com a mesma estrutura
+            PlayerXml xml = Content.Load<PlayerXml>(ResourceManager.pastaPersonagens + "/" + ResourceManager.personagemSFARyu);                  
             //criando player
             player1 = new Player(xml);
-            player1.PosX = (Window.ClientBounds.Width - 250) / 2;
+            player1.PosX = (Window.ClientBounds.Width - 150) / 2;
             player1.PosY = (Window.ClientBounds.Height - 100) / 2;
 
             //config. teclas de acao
@@ -82,26 +83,29 @@ namespace Versus_Fighter
             controller1.Left = Keys.J;
             controller1.Right = Keys.L;
             player1.Controller = controller1;
-
-            player2 = new Player(xml);
-            player2.PosX = (Window.ClientBounds.Width + 250) / 2;
-            player2.PosY = (Window.ClientBounds.Height - 100) / 2;
-            player2.FaceLeft = false;
+            //-----------------------------------------
+            //SFIIIAkuma
+            PlayerXml xmlSFIIIAkuma = Content.Load<PlayerXml>(ResourceManager.pastaPersonagens + "/" + ResourceManager.personagemSFIIIAkuma);
+            player2 = new Player(xmlSFIIIAkuma);
+            player2.PosX = (Window.ClientBounds.Width + 150) / 2;
+            player2.PosY = (Window.ClientBounds.Height - 135) / 2;
+            player2.FaceLeft = true;
 
             ControllerConfiguration controller2 = new ControllerConfiguration();
             controller2.HardPunch = Keys.D9;
             controller2.Left = Keys.Left;
             controller2.Right = Keys.Right;
             player2.Controller = controller2;
-
-            //Akuma
-            PlayerXml xmlAkumaMove = Content.Load<PlayerXml>(@"Personagens/AkumaHD");
-            playerAkuma = new Player(xmlAkumaMove);
+            //-----------------------------------------
+            //AkumaHD
+            PlayerXml xmlAkumaHD = Content.Load<PlayerXml>(ResourceManager.pastaPersonagens + "/" + ResourceManager.personagemHDAkuma);
+            //PlayerXml xmlAkumaMove = Content.Load<PlayerXml>(@"Personagens/AkumaHD");
+            playerAkuma = new Player(xmlAkumaHD);
             playerAkuma.PosX = (Window.ClientBounds.Width + 800) / 2;
             playerAkuma.PosY = (Window.ClientBounds.Height - 500) / 2;
             playerAkuma.FaceLeft = false;
             playerAkuma.Controller = null;
-
+            //-----------------------------------------
 
         }
 

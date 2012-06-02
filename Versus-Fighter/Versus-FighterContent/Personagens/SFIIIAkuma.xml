@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <!-- TODO: replace this Asset with your own XML asset data. -->
+  <Asset Type="PorradaEngine.Xml.PlayerXml">
+
+    <velocidadeAndarFrente>2</velocidadeAndarFrente>
+
+    <!-- PARADO -->
+    <parado>
+      <frames>
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>2 2 78 123</posicaoImagem>
+          <maxFrame>3</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>82 2 78 123</posicaoImagem>
+          <maxFrame>3</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>162 2 78 123</posicaoImagem>
+          <maxFrame>3</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>242 2 78 123</posicaoImagem>
+          <maxFrame>3</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>322 2 78 123</posicaoImagem>
+          <maxFrame>3</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>402 2 78 123</posicaoImagem>
+          <maxFrame>3</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>482 2 78 123</posicaoImagem>
+          <maxFrame>3</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>562 2 78 123</posicaoImagem>
+          <maxFrame>3</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>642 2 78 123</posicaoImagem>
+          <maxFrame>3</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>722 2 78 123</posicaoImagem>
+          <maxFrame>3</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>                
+      </frames>
+    </parado>
+
+    
+    <!-- ANDAR TRAZ - (sprite invertido horizontalmente) -->
+    <andarFrente>
+      <frames>
+        <Item>
+          <!--1-->
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>2 127 94 123</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--2-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>95 127 84 123</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--3-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>179 127 68 123</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--4-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>247 127 67 123</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--5-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>315 127 68 123</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--6-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>383 127 74 123</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--7-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>458 127 76 123</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--8-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>536 127 92 123</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--9-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>627 127 91 123</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--10-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>724 127 94 123</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--11-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>820 127 95 123</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+
+      </frames>
+    </andarFrente>
+
+
+   <!-- ANDAR FRENTE  (sprite invertido horizontalmente) -->
+    <andarTraz>
+      <frames>
+        <!--1-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>1044 2 95 122</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--2-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>1141 2 94 122</posicaoImagem>
+          <maxFrame>3</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--3-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>1235 2 76 122</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--4-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>1311 2 72 122</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--5-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>1384 2 69 122</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--6-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>1454 2 62 122</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--7-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>1516 2 65 122</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--8-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>1581 2 84 122</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--9-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>1666 2 95 122</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--10-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>1762 2 95 122</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+        <!--11-->
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>1858 2 95 122</posicaoImagem>
+          <maxFrame>4</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>        
+      </frames>
+    </andarTraz>
+
+    <!-- SOCO FORTE -->
+    <socoForte>
+      <frames>
+        <Item>
+          <spriteFile>SFIII_Akuma_Move</spriteFile>
+          <posicaoImagem>0 0 0 0</posicaoImagem>
+          <maxFrame>0</maxFrame>
+          <hittableBoxes>
+            0 0 0 0
+            0 0 0 0
+          </hittableBoxes>
+          <attackBoxes></attackBoxes>
+        </Item>
+      </frames>
+    </socoForte>    
+
+  </Asset>
+</XnaContent>
